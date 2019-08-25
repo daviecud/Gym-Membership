@@ -1,12 +1,13 @@
 package com.david.gymmembership.gym_membership.Model;
 
-public class SingleClubMember extends Member {
+//create subclass of parent class Member
+public class SingleClubMember extends Member { //SingleClubMember uses Inheritance to inherit the methods/fields of parent class Member (depending on access modifiers in Member class)
 
     //Create Fields
     private int club;
 
     //Create Constructor
-    SingleClubMember(String pMemberType, int pMemberID, String pName, double pFees, int pClub) {
+    public SingleClubMember(String pMemberType, int pMemberID, String pName, double pFees, int pClub) {
         super(pMemberType, pMemberID, pName, pFees);
         club = pClub;
     }

@@ -6,7 +6,7 @@ public class MultiClubMember extends Member {
     private int membershipPoints;
 
     //create constructor
-    MultiClubMember(String pMemberType, int pMemberID, String pName, double pFees, int pMembershipPoints) {
+    public MultiClubMember(String pMemberType, int pMemberID, String pName, double pFees, int pMembershipPoints) {
         super(pMemberType, pMemberID, pName, pFees);
         membershipPoints = pMembershipPoints;
     }
